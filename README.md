@@ -37,10 +37,11 @@ uv sync
 
 ### parancsok
 ```bash
-uv run cdk synth     # generate cloudformation
-uv run cdk diff      # preview changes
-uv run cdk deploy    # ship it
-uv run cdk destroy   # tear down
+uv run cdk bootstrap
+uv run cdk synth
+uv run cdk diff
+uv run cdk deploy
+uv run cdk destroy
 ```
 
 ### egyéb notes
