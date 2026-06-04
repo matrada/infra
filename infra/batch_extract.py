@@ -79,6 +79,7 @@ class BatchExtract(Stack):
         compute_env = batch.FargateComputeEnvironment(
             self,
             "FargateEnv",
+            compute_environment_name=f"{NAME}-compute",
             vpc=vpc,
             maxv_cpus=MAXV_CPUS,
         )
